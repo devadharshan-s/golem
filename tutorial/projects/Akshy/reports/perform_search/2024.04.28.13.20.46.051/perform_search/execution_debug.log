@@ -1,0 +1,8 @@
+2024-04-28 13:20:53,588 root INFO Test execution started: perform_search
+2024-04-28 13:20:53,589 root INFO Browser: chrome
+2024-04-28 13:20:53,591 root ERROR SyntaxError: invalid syntax
+  File "C:\Users\devad\PycharmProjects\golem\tutorial\projects\Akshy\tests\perform_search.py", line 6
+    navigate(http://wikipedia.org)
+                 ^
+SyntaxError: invalid syntax
+

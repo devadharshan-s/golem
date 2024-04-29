@@ -1,0 +1,41 @@
+{
+    "tests": [
+        {
+            "test_file": "perform_search",
+            "test": "setup",
+            "set_name": "",
+            "environment": "",
+            "result": "code error",
+            "description": "",
+            "browser": "",
+            "test_data": {},
+            "steps": [],
+            "errors": [
+                {
+                    "message": "SyntaxError: invalid syntax",
+                    "description": "  File \"C:\\Users\\devad\\PycharmProjects\\golem\\tutorial\\projects\\Akshy\\tests\\perform_search.py\", line 6\n    navigate(http://wikipedia.org)\n                 ^\nSyntaxError: invalid syntax\n"
+                }
+            ],
+            "elapsed_time": null,
+            "timestamp": "2024.04.28.13.21.36.923"
+        }
+    ],
+    "params": {
+        "browsers": [
+            {
+                "name": "chrome",
+                "capabilities": {}
+            }
+        ],
+        "processes": 1,
+        "environments": [],
+        "tags": [],
+        "remote_url": ""
+    },
+    "total_tests": 1,
+    "totals_by_result": {
+        "code error": 1
+    },
+    "net_elapsed_time": 0.01,
+    "has_finished": true
+}

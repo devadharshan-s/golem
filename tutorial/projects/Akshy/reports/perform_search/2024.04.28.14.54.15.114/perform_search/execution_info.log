@@ -1,0 +1,68 @@
+14:54:20.545 INFO Test execution started: perform_search
+14:54:20.548 INFO Browser: edge
+14:54:20.558 INFO Test started: test
+14:54:20.562 INFO Navigate to: 'https://wikipedia.org'
+14:55:03.508 ERROR Could not start edge driver using the path 'C:\Users\devad\Downloads\edgedriver_win64\msedgedriver.exe'
+verify that the edgedriver_path setting points to a valid webdriver executable.
+14:55:03.519 INFO Traceback (most recent call last):
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\browser.py", line 78, in validate_exec_path
+    yield matched_executable_path
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\browser.py", line 159, in open_browser
+    driver = GolemEdgeDriver(executable_path=ex_path)
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\selenium\webdriver\edge\webdriver.py", line 61, in __init__
+    RemoteWebDriver.__init__(
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 122
+Current browser version is 124.0.2478.19 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+
+
+14:55:03.554 ERROR Exception: Could not start edge driver using the path 'C:\Users\devad\Downloads\edgedriver_win64\msedgedriver.exe'
+verify that the edgedriver_path setting points to a valid webdriver executable.
+Traceback (most recent call last):
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\browser.py", line 78, in validate_exec_path
+    yield matched_executable_path
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\browser.py", line 159, in open_browser
+    driver = GolemEdgeDriver(executable_path=ex_path)
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\selenium\webdriver\edge\webdriver.py", line 61, in __init__
+    RemoteWebDriver.__init__(
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 122
+Current browser version is 124.0.2478.19 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\test_runner\test_runner.py", line 257, in run_test_function
+    f(execution.data)
+  File "C:\Users\devad\PycharmProjects\golem\tutorial\projects\Akshy\tests\perform_search.py", line 8, in test
+    navigate("https://wikipedia.org")
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\actions.py", line 1379, in navigate
+    get_browser().get(url)
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\actions.py", line 1097, in get_browser
+    return browser.get_browser()
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\browser.py", line 235, in get_browser
+    open_browser()
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\browser.py", line 159, in open_browser
+    driver = GolemEdgeDriver(executable_path=ex_path)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\browser.py", line 84, in validate_exec_path
+    raise Exception(msg)
+Exception: Could not start edge driver using the path 'C:\Users\devad\Downloads\edgedriver_win64\msedgedriver.exe'
+verify that the edgedriver_path setting points to a valid webdriver executable.
+14:55:06.605 INFO Test Result: CODE ERROR

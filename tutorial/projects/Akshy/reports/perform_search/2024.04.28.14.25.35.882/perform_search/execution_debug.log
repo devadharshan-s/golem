@@ -1,0 +1,5 @@
+2024-04-28 14:25:38,472 root INFO Test execution started: perform_search
+2024-04-28 14:25:38,473 root INFO Browser: edge
+2024-04-28 14:25:38,475 root ERROR AttributeError: module 'webdriver_manager' has no attribute 'webdriver'
+AttributeError: module 'webdriver_manager' has no attribute 'webdriver'
+

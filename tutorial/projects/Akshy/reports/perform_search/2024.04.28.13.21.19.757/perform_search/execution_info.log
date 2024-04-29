@@ -1,0 +1,8 @@
+13:21:22.852 INFO Test execution started: perform_search
+13:21:22.853 INFO Browser: chrome
+13:21:22.856 ERROR SyntaxError: invalid syntax
+  File "C:\Users\devad\PycharmProjects\golem\tutorial\projects\Akshy\tests\perform_search.py", line 6
+    navigate(https://wikipedia.org)
+                  ^
+SyntaxError: invalid syntax
+

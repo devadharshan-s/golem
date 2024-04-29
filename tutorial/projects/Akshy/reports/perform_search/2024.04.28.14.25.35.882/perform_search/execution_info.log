@@ -1,0 +1,5 @@
+14:25:38.472 INFO Test execution started: perform_search
+14:25:38.473 INFO Browser: edge
+14:25:38.475 ERROR AttributeError: module 'webdriver_manager' has no attribute 'webdriver'
+AttributeError: module 'webdriver_manager' has no attribute 'webdriver'
+

@@ -1,0 +1,10 @@
+[
+    {
+        "id": "df569904",
+        "username": "admin",
+        "password": "scrypt:32768:8:1$7ej7RtEqNSZjJ5gZ$fc2b1a0acc7c3eacd7df00e9f0b36cd8bd8bd71c421d771457717142839d1586b08051b7bc398a8fe5c0fb0bc54465ff542289e54fadba192db07d279153f773",
+        "email": null,
+        "is_superuser": true,
+        "projects": {}
+    }
+]

@@ -1,0 +1,8 @@
+2024-04-28 14:24:19,345 root INFO Test execution started: perform_search
+2024-04-28 14:24:19,346 root INFO Browser: edge
+2024-04-28 14:24:19,348 root ERROR SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+  File "C:\Users\devad\PycharmProjects\golem\tutorial\projects\Akshy\tests\perform_search.py", line 4
+    driver = webdriver_manager.webdriver.chromedriver(exec='C:\Users\devad\PycharmProjects\golem\tutorial\drivers\chromedriver_114.0.5735.90.exe')
+                                                                                                                                                 ^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape
+

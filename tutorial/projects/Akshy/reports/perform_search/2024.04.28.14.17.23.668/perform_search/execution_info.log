@@ -1,0 +1,25 @@
+14:17:26.966 INFO Test execution started: perform_search
+14:17:26.967 INFO Browser: edge
+14:17:26.972 INFO Test started: test
+14:17:26.972 INFO Navigate to: 'https://wikipedia.org'
+14:17:26.973 ERROR No executable file found using path ./drivers/edgedriver*
+14:17:26.985 ERROR Exception: No executable file found using path ./drivers/edgedriver*
+Traceback (most recent call last):
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\test_runner\test_runner.py", line 257, in run_test_function
+    f(execution.data)
+  File "C:\Users\devad\PycharmProjects\golem\tutorial\projects\Akshy\tests\perform_search.py", line 7, in test
+    navigate("https://wikipedia.org")
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\actions.py", line 1379, in navigate
+    get_browser().get(url)
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\actions.py", line 1097, in get_browser
+    return browser.get_browser()
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\browser.py", line 235, in get_browser
+    open_browser()
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\browser.py", line 158, in open_browser
+    with validate_exec_path('edge', 'edgedriver_path', settings) as ex_path:
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\browser.py", line 88, in validate_exec_path
+    raise Exception(msg)
+Exception: No executable file found using path ./drivers/edgedriver*
+14:17:26.987 INFO Test Result: CODE ERROR

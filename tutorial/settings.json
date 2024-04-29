@@ -1,0 +1,20 @@
+{
+"search_timeout": 20,
+"wait_displayed": false,
+"screenshot_on_error": true,
+"screenshot_on_step": false,
+"screenshot_on_end": false,
+"highlight_elements": false,
+"wait_hook": null,
+"default_browser": "edge",
+"chromedriver_path": "./drivers/chromedriver*",
+"edgedriver_path": "C:\\Users\\devad\\Downloads\\edgedriver_win64\\msedgedriver.exe",
+"geckodriver_path": "./drivers/geckodriver*",
+"iedriver_path": "./drivers/iedriver*",
+"operadriver_path": "./drivers/operadriver*",
+"remote_url": "http://localhost:4444/wd/hub",
+"implicit_actions_import": true,
+"implicit_page_import": true,
+"cli_log_level": "INFO",
+"log_all_events": true
+}

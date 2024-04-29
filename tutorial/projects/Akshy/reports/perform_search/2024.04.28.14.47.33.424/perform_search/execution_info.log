@@ -1,0 +1,68 @@
+14:47:36.215 INFO Test execution started: perform_search
+14:47:36.217 INFO Browser: chrome
+14:47:36.222 INFO Test started: test
+14:47:36.223 INFO Navigate to: 'https://wikipedia.org'
+14:47:42.071 ERROR Could not start chrome driver using the path './drivers/chromedriver_*'
+verify that the chromedriver_path setting points to a valid webdriver executable.
+14:47:42.085 INFO Traceback (most recent call last):
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\browser.py", line 78, in validate_exec_path
+    yield matched_executable_path
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\browser.py", line 133, in open_browser
+    driver = GolemChromeDriver(executable_path=ex_path,
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 76, in __init__
+    RemoteWebDriver.__init__(
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 124.0.6367.91 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+
+
+14:47:42.101 ERROR Exception: Could not start chrome driver using the path './drivers/chromedriver_*'
+verify that the chromedriver_path setting points to a valid webdriver executable.
+Traceback (most recent call last):
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\browser.py", line 78, in validate_exec_path
+    yield matched_executable_path
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\browser.py", line 133, in open_browser
+    driver = GolemChromeDriver(executable_path=ex_path,
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 76, in __init__
+    RemoteWebDriver.__init__(
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 124.0.6367.91 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\test_runner\test_runner.py", line 257, in run_test_function
+    f(execution.data)
+  File "C:\Users\devad\PycharmProjects\golem\tutorial\projects\Akshy\tests\perform_search.py", line 8, in test
+    navigate("https://wikipedia.org")
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\actions.py", line 1379, in navigate
+    get_browser().get(url)
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\actions.py", line 1097, in get_browser
+    return browser.get_browser()
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\browser.py", line 235, in get_browser
+    open_browser()
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\browser.py", line 133, in open_browser
+    driver = GolemChromeDriver(executable_path=ex_path,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\devad\PycharmProjects\golem\venv\lib\site-packages\golem\browser.py", line 84, in validate_exec_path
+    raise Exception(msg)
+Exception: Could not start chrome driver using the path './drivers/chromedriver_*'
+verify that the chromedriver_path setting points to a valid webdriver executable.
+14:47:42.105 INFO Test Result: CODE ERROR

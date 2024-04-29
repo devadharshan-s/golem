@@ -1,0 +1,21 @@
+[
+    {
+        "test_file": "perform_search",
+        "test": "setup",
+        "set_name": "",
+        "environment": "",
+        "result": "code error",
+        "description": "",
+        "browser": "",
+        "test_data": {},
+        "steps": [],
+        "errors": [
+            {
+                "message": "SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \\UXXXXXXXX escape",
+                "description": "  File \"C:\\Users\\devad\\PycharmProjects\\golem\\tutorial\\projects\\Akshy\\tests\\perform_search.py\", line 4\n    driver = webdriver_manager.webdriver.chromedriver(exec='C:\\Users\\devad\\PycharmProjects\\golem\\tutorial\\drivers\\chromedriver_114.0.5735.90.exe')\n                                                                                                                                                 ^\nSyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \\UXXXXXXXX escape\n"
+            }
+        ],
+        "elapsed_time": null,
+        "timestamp": "2024.04.28.14.24.19.342"
+    }
+]

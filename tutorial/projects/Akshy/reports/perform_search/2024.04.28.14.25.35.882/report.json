@@ -1,0 +1,56 @@
+{
+    "tests": [
+        {
+            "test_file": "perform_search",
+            "test": "test",
+            "set_name": "",
+            "environment": null,
+            "result": "not run",
+            "description": null,
+            "browser": "edge",
+            "test_data": null,
+            "steps": [],
+            "errors": [],
+            "elapsed_time": null,
+            "timestamp": null
+        },
+        {
+            "test_file": "perform_search",
+            "test": "setup",
+            "set_name": "",
+            "environment": "",
+            "result": "code error",
+            "description": "",
+            "browser": "",
+            "test_data": {},
+            "steps": [],
+            "errors": [
+                {
+                    "message": "AttributeError: module 'webdriver_manager' has no attribute 'webdriver'",
+                    "description": "AttributeError: module 'webdriver_manager' has no attribute 'webdriver'\n"
+                }
+            ],
+            "elapsed_time": null,
+            "timestamp": "2024.04.28.14.25.38.466"
+        }
+    ],
+    "params": {
+        "browsers": [
+            {
+                "name": "edge",
+                "capabilities": {}
+            }
+        ],
+        "processes": 1,
+        "environments": [],
+        "tags": [],
+        "remote_url": ""
+    },
+    "total_tests": 2,
+    "totals_by_result": {
+        "not run": 1,
+        "code error": 1
+    },
+    "net_elapsed_time": 0.01,
+    "has_finished": true
+}
